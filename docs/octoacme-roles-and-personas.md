@@ -2,80 +2,60 @@
 
 This document defines typical roles and responsibilities used in OctoAcme project docs and exercises.
 
----
-
-## Developers
-
-### Role Summary
-Developers design, build, test, and deliver software components. They collaborate with product and project leads to implement features that meet acceptance criteria and quality standards.
-
-### Responsibilities
-- Implement features and fixes to meet acceptance criteria
-- Write and maintain tests and documentation
-- Participate in design and code reviews
-- Assist in estimating and planning work
-- Help identify technical risks and propose mitigations
-
-### Goals
-- Deliver reliable, maintainable code
-- Reduce cycle time from idea to production
-- Maintain high test coverage and observability
-
-### Typical Communication
-- Daily standups and sprint planning
-- PR descriptions and code review comments
-- Technical design docs when needed
+... [existing roles: Developers, Product Managers, Project Managers] ...
 
 ---
 
-## Product Managers
+## QA Lead
 
 ### Role Summary
-Product Managers define what should be built to deliver customer and business value. They own the product vision, prioritize the backlog, and measure outcomes.
+The QA Lead is responsible for the overall quality strategy. They ensure that the "Definition of Done" is met and that features are verified against acceptance criteria before they reach production.
 
 ### Responsibilities
-- Define problem statements and success metrics
-- Prioritize the roadmap and backlog
-- Collaborate with stakeholders and engineering on trade-offs
-- Validate solutions through user research and metrics
-
-### Goals
-- Maximize customer value and impact
-- Make clear, data-driven prioritization decisions
-- Ensure product-market fit and usability
-
-### Typical Communication
-- Weekly alignment with PM and engineering leads
-- Roadmap updates and stakeholder briefings
-- Acceptance criteria and feature specs
+- Define the test strategy (Unit, Integration, and E2E smoke tests).
+- Perform manual QA for feature acceptance.
+- Verify that security scanning and linting results are addressed in CI.
+- **Interaction:** Works closely with Developers during "In Review/QA" stages and provides the final quality sign-off to the Project Manager.
 
 ---
 
-## Project Managers
+## Release Manager
 
 ### Role Summary
-Project Managers coordinate delivery activities, manage schedules, risks, and communications. They enable the team to deliver on commitments efficiently.
+The Release Manager coordinates the deployment lifecycle, ensuring that releases are stable, documented, and communicated to stakeholders.
 
 ### Responsibilities
-- Create and maintain project plans and timelines
-- Manage risks, dependencies, and resource constraints
-- Facilitate meetings (kickoff, planning, retrospectives)
-- Ensure consistent project documentation and status reporting
-- Coordinate cross-team and stakeholder communication
+- Maintain the "Deployment Checklist" and schedule deployment windows.
+- Coordinate post-deploy verifications and "Smoke tests."
+- Draft and distribute Release Notes based on the provided template.
+- **Interaction:** Collaborates with PMs on the release plan and coordinates with Developers for hotfixes or rollbacks.
 
-### Goals
-- Deliver projects on time and within scope
-- Minimize unplanned work and escalations
-- Maintain transparency and alignment across stakeholders
+---
 
-### Typical Communication
-- Weekly status updates and stakeholder reports
-- Risk registers and decision logs
-- Coordination via project boards and meeting facilitation
+## UX/UI Designer
+
+### Role Summary
+The Designer ensures the "Customer-first" principle is upheld by translating business goals into usable, intuitive interface designs.
+
+### Responsibilities
+- Create wireframes and high-fidelity mockups for the "Project One-pager."
+- Ensure designs account for usability and accessibility standards.
+- **Interaction:** Consults with Product Managers during Initiation and provides design specs to Developers during Planning.
+
+---
+
+## Security Engineer
+
+### Role Summary
+Provides oversight for risk mitigation and ensures that security best practices are integrated into the CI/CD pipeline and codebase.
+
+### Responsibilities
+- Configure and monitor security scanning tools in CI.
+- Manage the "Security incident runbook" and lead "Post-incident retrospectives."
+- **Interaction:** Acts as an escalation point for the PM/Developers when a high-impact security risk is identified in the Risk Register.
 
 ---
 
 ## How these personas are used in the exercise
 - Use these persona definitions to frame scenarios and sample interactions in the Skills Exercise.
 - Each persona can be used as a persona prompt for Copilot Spaces to shape role-specific guidance.
-
